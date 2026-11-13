@@ -7,4 +7,5 @@ node_modules/
 # Игнорировать временные файлы ОС и редакторов
 .DS_Store
 .vscode/
-
+junit-platform-console-standalone-1.10.2.jar
+*.class
