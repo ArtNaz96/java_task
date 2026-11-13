@@ -1,11 +1,9 @@
-# Игнорировать папку с зависимостями
 node_modules/
-
-# Игнорировать файлы с секретными ключами и настройками окружения
 .env
-
-# Игнорировать временные файлы ОС и редакторов
-.DS_Store
-.vscode/
-junit-platform-console-standalone-1.10.2.jar
+target/
 *.class
+*.jar
+.idea/
+*.iml
+.vscode/
+.DS_Store
