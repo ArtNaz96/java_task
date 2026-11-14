@@ -26,5 +26,11 @@ public class Main {
         } catch (ArithmeticException e) {
             System.out.println("Перехвачено ожидаемое исключение: " + e.getMessage());
         }
+
+        System.out.println("\n=== Дополнительный сценарий 4: дробные числа (7.5 и 2.0) ===");
+        System.out.println("Результат сложения (7.5 + 2.0): " + calculator.add(7.5, 2.0));
+        System.out.println("Результат вычитания (7.5 - 2.0): " + calculator.subtract(7.5, 2.0));
+        System.out.println("Результат умножения (7.5 * 2.0): " + calculator.multiply(7.5, 2.0));
+        System.out.println("Результат деления (7.5 / 2.0): " + calculator.divide(7.5, 2.0));
     }
 }
