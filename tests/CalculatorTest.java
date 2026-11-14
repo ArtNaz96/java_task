@@ -91,4 +91,41 @@ public class CalculatorTest {
     void testDivisionByZero() {
         assertThrows(ArithmeticException.class, () -> calculator.divide(20, 0));
     }
+
+    @Test
+    @DisplayName("Сложение дробных чисел")
+    void testAddFractionalNumbers() {
+        assertEquals(0.3, calculator.add(0.1, 0.2), 1e-9);
+    }
+
+    @Test
+    @DisplayName("Вычитание дробных чисел")
+    void testSubtractFractionalNumbers() {
+        assertEquals(0.2, calculator.subtract(0.3, 0.1), 1e-9);
+    }
+
+    @Test
+    @DisplayName("Умножение дробных чисел")
+    void testMultiplyFractionalNumbers() {
+        assertEquals(0.3, calculator.multiply(1.5, 0.2), 1e-9);
+    }
+
+    @Test
+    @DisplayName("Деление дробных чисел")
+    void testDivideFractionalNumbers() {
+        assertEquals(7.5, calculator.divide(1.5, 0.2), 1e-9);
+    }
+
+    @Test
+    @DisplayName("Деление сохраняет дробную часть: 5 / 2 = 2.5")
+    void testDividePreservesFractionalPart() {
+        assertEquals(2.5, calculator.divide(5, 2), 1e-9);
+    }
+
+    @Test
+    @DisplayName("Деление на отрицательный ноль выбрасывает ArithmeticException")
+    void testDivisionByNegativeZero() {
+        assertThrows(ArithmeticException.class, () -> calculator.divide(20, -0.0));
+    }
+
 }
