@@ -6,27 +6,15 @@
 
 - `Calculator.java` и `Main.java` — в корне проекта.
 - `tests/CalculatorTest.java` — тесты.
-- `bin/` — скомпилированные файлы; при запуске через Maven используются подпапки `bin/classes/` и `bin/test-classes/`.
+- `bin/` — скомпилированные файлы.
 
 Команды ниже выполняются из корня проекта.
 
 ## Требования
 - JDK 21
-- Apache Maven 3.8+ (рекомендуется) или `junit-platform-console-standalone-1.10.2.jar` для ручного запуска
+- `junit-platform-console-standalone-1.10.2.jar` в корне проекта для запуска тестов
 
-## Запуск через Maven
-
-Запуск модульных тестов:
-```bash
-mvn clean test
-```
-
-Компиляция и запуск консольной программы `Main`:
-```bash
-mvn compile exec:java -Dexec.mainClass="Main"
-```
-
-## Ручной запуск без Maven (через терминал)
+## Компиляция и запуск
 
 1. Компиляция и запуск `Main`:
 ```bash
